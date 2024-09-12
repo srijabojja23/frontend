@@ -1,0 +1,361 @@
+#website {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    border: 2px black solid;
+
+    #navebar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 700px;
+        padding: 20px 0px;
+
+        #nav_menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            #nav_text {
+                color: gray;
+                font-size: 15px;
+            }
+
+            #icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                #icon {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+
+    #loginpage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 110px 300px;
+        background: linear-gradient(rgba(255, 255, 255, 0.053), rgba(173, 230, 220, 0.201)), url("data:image/jpeg;base64,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");
+
+        #heading {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #subheading {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        #login {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 700px;
+            border: 2px black solid;
+            padding: 10px 20px;
+            background-color: black;
+
+            #text {
+                border-radius: 5px;
+                padding: 10px 30px;
+                font-size: 16px;
+                border: 1px red solid;
+            }
+
+            #submit {
+                border: 2px black solid;
+                border-radius: 5px;
+                background-color: rgba(0, 213, 255, 0.915);
+                color: white;
+                padding: 10px 30px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+        }
+
+        #note {
+            gap: 700px;
+            font-size: 15px;
+            color: white;
+        }
+    }
+
+    #site {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 2px black solid;
+        background-color: rgba(240, 248, 255, 0.889);
+        padding: 20px 200px;
+        #site_1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            #img{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 3px skyblue solid;
+
+                img {
+                    padding: 20px;
+                }
+
+            }
+
+            #site_2{
+                font-size: 20px;
+                width: 60%;
+            }
+        }
+    }
+
+    #page {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 200px;
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 100px 40px;
+            gap: 15px;
+
+            #content1 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #content2 {
+                font-size: 25px;
+            }
+
+            #content3 {
+                font-size: 20px;
+                color: gray;
+            }
+        }
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        #service_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            #service1 {
+                font-size: 30px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.592)
+            }
+
+            #service2 {
+                font-size: 20px;
+                color: gray;
+            }
+        }
+
+        #logos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+        }
+    }
+
+    #client {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 300px;
+        gap: 30px;
+        background-color: rgba(215, 248, 250, 0.514);
+
+        #clientsay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            #client1 {
+                font-size: 30px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.564);
+            }
+
+            #client2 {
+                font-size: 30px;
+                color: gray;
+            }
+        }
+
+        #rating {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+
+            #total {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                #pic{
+                    border: 20px black;
+                    background-color: rgba(128, 128, 128, 0.286);
+                    img{
+                        padding: 20px;
+                        border-radius: 60px;
+                    }
+                }
+
+                #mix {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
+                    background-color: white;
+                    padding: 27px 20px;
+                    #sent {
+                        color: gray;
+                        font-size: 15px;
+                        align-items: flex-start;
+                        text-align: left;
+                        width: 400px;
+                    }
+                    #all {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        #third {
+                            color: rgb(135, 235, 233);
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #subscribe_now {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 200px;
+
+        #subscribe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 100px 40px;
+            gap: 15px;
+
+            #text1 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #text2 {
+                font-size: 20px;
+                color: gray;
+            }
+
+            #text3 {
+                background-color: rgba(0, 213, 255, 0.915);
+                color: white;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 19px;
+                padding: 10px 30px;
+            }
+        }
+    }
+
+    #last {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 389px;
+        gap: 15px;
+        background-color: rgba(135, 207, 235, 0.301);
+
+        #last0 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            #last1 {
+                font-size: 15px;
+                color: gray;
+            }
+
+            #last10 {
+                font-size: 17px;
+                color: orangered;
+            }
+        }
+
+        #last2 {
+            font-size: 15px;
+            color: gray;
+        }
+        #last3{
+            display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        #x{
+            height: 20px;
+            width: 20px;
+        }
+        #like{
+            height: 30px;
+        }
+    }
+
+}
+}
